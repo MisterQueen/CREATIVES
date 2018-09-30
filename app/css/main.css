@@ -259,7 +259,7 @@ header {
     margin-bottom: 119px; }
   header div p {
     margin-bottom: 23px; }
-  header div button {
+  header div div {
     background: rgba(255, 255, 255, 0);
     border: 1px solid white;
     width: 67px;
@@ -268,8 +268,10 @@ header {
     margin-left: 50%;
     position: relative;
     left: -33.5px;
+    padding: 16px 0 0 22px;
+    box-sizing: border-box;
     cursor: pointer; }
-    header div button i {
+    header div div i {
       color: white;
       font-size: 35px; }
 

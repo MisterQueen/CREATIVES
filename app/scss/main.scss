@@ -301,7 +301,7 @@ header {
             @extend %txtw;
             margin-bottom: 23px;
         }
-        button {
+        div{
             background: rgba(255, 255, 255, 0);
             border: 1px solid white;
             width: 67px;
@@ -310,6 +310,8 @@ header {
             margin-left: 50%;
             position: relative;
             left: -33.5px;
+            padding: 16px 0 0 22px;
+            box-sizing: border-box;
             cursor: pointer;
             i {
                 color: white;
@@ -797,13 +799,13 @@ header {
         background: rgba(0, 0, 0, 0);
         transition: all linear 0.2s;
         display: none;
-        transition:all 1s; 
+        transition: all 1s;
     }
 }
 
 .up {
     display: block !important;
-    transition:all 1s;
+    transition: all 1s;
 }
 
 @media(max-width: 1200px) {

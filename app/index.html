@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/Logo.png" type="images/png">
     <title>Creatives</title>
-    <meta name="keywords" contant="agency">
-    <meta name="description" contant="We are an awesome agency">
-    <meta name="author" contant="T.O.S">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="css/main.css">
@@ -15,10 +12,10 @@
 
 <body>
     <nav id="nav">
-        <div class="togle">
+        <div class="togle" onclick="navMenu()">
             <i class="fas fa-bars menu"></i>
         </div>
-        <div class="nav-body">
+        <div id="navBody" class="nav-body">
             <div class="logo">
                 <a href="#">
                     <div>CS</div>
@@ -26,24 +23,36 @@
                 </a>
             </div>
             <ul class="nav-ul">
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>Pages</li>
-                </a>
-                <a href="#">
-                    <li>Features</li>
-                </a>
-                <a href="#">
-                    <li>Extensions</li>
-                </a>
-                <a href="#">
-                    <li>Tutirials</li>
-                </a>
-                <a href="#">
-                    <li>Contact us</li>
-                </a>
+                <li>
+                    <a href="#">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Pages</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Features</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Extensions</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Tutirials</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Contact us</p>
+                    </a>
+                </li>
             </ul>
             <div class="nav-icon">
                 <a href="#">
@@ -60,16 +69,13 @@
                 </a>
             </div>
         </div>
-        </div>
     </nav>
     <header>
         <p class="cratives">CREATIVES</p>
         <p>POWER BY PSDFREEBIES.COM</p>
         <div>
             <p>Scroll down</p>
-            <a href="#map">
-                <button><i class="fas fa-angle-down"></i></button>
-            </a>
+            <div><a href="#map"><i class="fas fa-angle-down"></i></a></div>
         </div>
     </header>
     <div class="aboutUs">
@@ -144,7 +150,7 @@
         </div>
         <div class="blogContent">
             <div class="card">
-                <img src="c:/WEB/Creatives/app/images/blogers.png">
+                <img src="c:/WEB/Creatives/app/images/blogers.png" alt="Blogers">
                 <h2>Fresh summer cumpaign</h2>
                 <p>Cum sociis natoque penatibus et masgnis dis partuient montes,
                     nascetur ridiculus mus. Lorem ipsum dolor sit amet,
@@ -152,7 +158,7 @@
                     sagittis lacus vel augue</p>
             </div>
             <div class="card">
-                <img src="c:/WEB/Creatives/app/images/analitik.png">
+                <img src="c:/WEB/Creatives/app/images/analitik.png" alt="Analitiks">
                 <h2>Fresh summer cumpaign</h2>
                 <p>Cum sociis natoque penatibus et masgnis dis partuient montes,
                     nascetur ridiculus mus. Lorem ipsum dolor sit amet,
@@ -160,7 +166,7 @@
                     sagittis lacus vel augue</p>
             </div>
             <div class="card">
-                <img src="c:/WEB/Creatives/app/images/ofice.png">
+                <img src="c:/WEB/Creatives/app/images/ofice.png" alt="Ofice work">
                 <h2>Fresh summer cumpaign</h2>
                 <p>Cum sociis natoque penatibus et masgnis dis partuient montes,
                     nascetur ridiculus mus. Lorem ipsum dolor sit amet,
@@ -168,7 +174,7 @@
                     sagittis lacus vel augue</p>
             </div>
             <div class="card">
-                <img src="c:/WEB/Creatives/app/images/blogers.png">
+                <img src="c:/WEB/Creatives/app/images/blogers.png" alt="Blogers">
                 <h2>Fresh summer cumpaign</h2>
                 <p>Cum sociis natoque penatibus et masgnis dis partuient montes,
                     nascetur ridiculus mus. Lorem ipsum dolor sit amet,
@@ -252,7 +258,7 @@
             <p>C</p>
             <h2>We'd Love to hear about your project</h2>
         </div>
-        <form action="" method="GET">
+        <form action="GET" method="GET">
             <input type="text" name="Name" placeholder="Name" autocomplete="off" required>
             <input type="email" name="Email" placeholder="Email" autocomplete="off" required>
             <input type="tel" name="phone number" placeholder="Phone" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" title="+38 (063) 123-45-67"
@@ -266,9 +272,8 @@
         <a href="#" id="up" onclick="return up()"><img src="c:/WEB/Creatives/app/images/up.jpg" alt="UP"></a>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" async></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
     <script src="js/js.js" async></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamUmo2osYtcog_D6WNALF7C9gQ1plr6c &callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamUmo2osYtcog_D6WNALF7C9gQ1plr6c&callback=initMap"
         async defer></script>
 </body>
 
