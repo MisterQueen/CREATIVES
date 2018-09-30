@@ -7,10 +7,12 @@ function myFunction() {
     document.getElementById("nav").className = "";
   }
 };
-function navMenu(){
-  document.getElementById("navBody").className = "active";
-}
-     //Add google map
+$(document).ready(function(){
+  $('.menu').click(function(){
+    $('.nav-body').toggleClass('active');
+  })
+});
+        //Add google map
 function initMap() {
   var pos = { lat: 50.437309, lng: 30.600915 }
   var opt = {
@@ -97,7 +99,7 @@ function initMap() {
       }
     ]
   };
- 
+
   var myMap = new google.maps.Map(document.getElementById("map"), opt);
 
   var marker = new google.maps.Marker({
@@ -115,7 +117,7 @@ function initMap() {
     info.open(myMap, marker)
   })
 };
-      //Add up block
+        //Add up block
 function up() {
   var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
   if (top > 0) {
