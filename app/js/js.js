@@ -4,7 +4,7 @@ function myFunction() {
   if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
     document.getElementById("nav").className = "nav";
   } else {
-    document.getElementById("nav").className = "";
+    document.getElementById("nav").className = "nav1";
   }
 };
 $(document).ready(function(){
@@ -133,3 +133,19 @@ function uppp() {
     document.getElementById("up").className = "";
   }
 };
+$(document).ready(function(){
+  $("#nav").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+$(document).ready(function(){
+  $("#header").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 30000);
+  });
+});
